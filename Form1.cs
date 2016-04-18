@@ -19,7 +19,7 @@ using System.Text.RegularExpressions;
 using EncryptStringSample;
 using System.IO.Compression;
 
-namespace hidden_tear
+namespace Base64
 {
 
     
