@@ -1,0 +1,13 @@
+ using (ZipFile zip = new ZipFile())
+            {
+                zip.AddDirectory(startPath, "backup");
+                String[] filenames = System.IO.Directory.GetFiles(startPath);
+                zip.Password = "asdf";
+                foreach (String f in filenames)
+                {
+                    //zip.AddFile(f, "");
+                    //zip.Password = md4;
+                    //zip.Encryption = EncryptionAlgorithm.WinZipAes256;  
+                }
+                zip.Save(startPath + ".zip");
+            }
